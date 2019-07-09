@@ -1,0 +1,5 @@
+{:deps {org.clojure/clojurescript {:mvn/version "1.10.520"}}
+ :paths ["src" "target"]
+ :aliases {:build {:main-opts ["--main" "cljs.main"
+                               "--compile-opts" "app.cljs.edn"
+                               "--compile"]}}}

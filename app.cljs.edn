@@ -1,0 +1,9 @@
+{:watch ["src"]
+ :main app.core
+ :output-dir "target/public/cljs-out"
+ :npm-deps false
+ :infer-externs false
+ :optimizations :simple
+ :pseudo-names true
+ :pretty-print true
+ :verbose true}
