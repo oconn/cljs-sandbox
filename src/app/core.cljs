@@ -1,4 +1,9 @@
 (ns app.core)
 
-(clj->js {"some" {"value" true}})
-(clj->js {"some" {:value true}})
+;; Works
+(js/console.log (clj->js {"some" {"value" true}}))
+
+;; Fails
+(try (clj->js {"some" {:value true}})
+     (catch js/Error e
+       (js/console.error "Failed to parse cljs object: " e)))
